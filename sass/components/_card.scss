@@ -6,7 +6,7 @@
     &__side{
         background-color: orangered;
         height: 50rem;
-        transition:all .8s;
+        transition:all .8s ease;
         position: absolute;
         top:0;
         left:0;
@@ -31,9 +31,9 @@
     
         
     &:hover &__side--front{
-        transform:rotateY(180deg);
+        transform:rotateY(-180deg);
     }
     &:hover &__side--back{
         transform:rotateY(0);
-    }
+    }   
 }
